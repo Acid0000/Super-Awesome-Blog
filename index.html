@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog - Landing Page</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+</head>
+<body>
+    <header class="header">
+        <div class="toggle-container">
+            <button id="toggleMode" class="toggle-btn">☀️</button>
+        </div>
+    </header>
+    <div class="header-line"></div>
+    <div class="center-lines"></div>
+    <div class="container">
+        <div class="left">
+            <div class="circle">
+                <h1>My First Blog</h1>
+            </div>
+        </div>
+        <div class="right">
+            <h2>What's on your mind?</h2>
+            <form id="blogForm">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">Content</label>
+                    <textarea id="content" name="content" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <p id="errorMessage" class="error"></p>
+        </div>
+    </div>
+    <script src="assets/js/logic.js"></script>
+</body>
+</html>
